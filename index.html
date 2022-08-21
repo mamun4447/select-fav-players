@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!---->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select your Fav Player's</title>
+    <!--Tailwind Link start-->
+    <!--DaisyUi Link-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!--Tailwind Link end-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-slate-800">
+    <!--Header section Start-->
+    <header class="w-full h-96 bg-black">
+      <div class="text-center pt-28 backgrounImage">
+        <h1 class="text-6xl heading py-3">Select Your Best Five</h1>
+        <p class="w-3/6 mx-auto">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+        </p>
+        <img class="absolute top-0 right-0" src="images/Card-psg.png" alt="" />
+        
+        <img class="absolute bottom-72 left-0" src="images/path56.png" alt="" />
+        
+      </div>
+    </header>
+    <!--Header section End-->
+
+    <!--Main section start-->
+    <main class="py-5 w-9/12 mx-auto grid grid-cols-3 gap-4">
+      <section class="col-span-2 grid grid-cols-3 gap-2">
+        <!--Single Card Start-->
+        <div class="card w-full bg-black shadow-xl">
+          <figure>
+            <img src="images/messi.png" alt="Shoes" />
+          </figure>
+          <div class="card-body justify-center mb-5">
+            <h2 class="card-title">Lionel Messi</h2>
+            
+            <div class="card-actions justify-center mt-5 ">
+              <button class="btn btn-primary">Select</button>
+            </div>
+          </div>
+        </div>
+        <!--Single Card End-->
+        <!--Single Card Start-->
+        <div class="card w-full bg-black shadow-xl">
+          <figure>
+            <img src="images/neimar.png" alt="Shoes" />
+          </figure>
+          <div class="card-body justify-center mb-5">
+            <h2 class="card-title">Neymar Jr</h2>
+            
+            <div class="card-actions justify-center mt-5 ">
+              <button class="btn btn-primary">Select</button>
+            </div>
+          </div>
+        </div>
+        <!--Single Card End-->
+        <!--Single Card Start-->
+        <div class="card w-full bg-black shadow-xl">
+          <figure>
+            <img src="images/nera.png" alt="Shoes" />
+          </figure>
+          <div class="card-body justify-center mb-5">
+            <h2 class="card-title">Kylian Mbappé</h2>
+            
+            <div class="card-actions justify-center mt-5 ">
+              <button class="btn btn-primary">Select</button>
+            </div>
+          </div>
+        </div>
+        <!--Single Card End-->
+        <!--Single Card Start-->
+        <div class="card w-full bg-black shadow-xl">
+          <figure>
+            <img src="images/dari.png" alt="Shoes" />
+          </figure>
+          <div class="card-body justify-center mb-5">
+            <h2 class="card-title">Vítor Machado</h2>
+            
+            <div class="card-actions justify-center mt-5 ">
+              <button class="btn btn-primary">Select</button>
+            </div>
+          </div>
+        </div>
+        <!--Single Card End-->
+        <!--Single Card Start-->
+        <div class="card w-full bg-black shadow-xl">
+          <figure>
+            <img src="images/ran.png" alt="Shoes" />
+          </figure>
+          <div class="card-body justify-center mb-5">
+            <h2 class="card-title">Sergio Ramos</h2>
+            
+            <div class="card-actions justify-center mt-5 ">
+              <button class="btn btn-primary">Select</button>
+            </div>
+          </div>
+        </div>
+        <!--Single Card End-->
+        <!--Single Card Start-->
+        <div class="card w-full bg-black shadow-xl">
+          <figure>
+            <img src="images/qatar.png" alt="Shoes" />
+          </figure>
+          <div class="card-body justify-center mb-5">
+            <h2 class="card-title">Renato Sanches</h2>
+            
+            <div class="card-actions justify-center mt-5 ">
+              <button class="btn btn-primary">Select</button>
+            </div>
+          </div>
+        </div>
+        <!--Single Card End-->
+       
+      </section>
+
+      <!--Five Players Name-->
+      <section class="grid grid-cols-1 h-auto">
+        <div class="bg-black rounded-2xl mb-5">
+          <h1 class="text-center my-5 text-3xl">Selected-V</h1>
+            <ol class="pl-5">
+              <li>Mamun</li>
+              <li>Hello</li>
+            </ol>
+            
+        </div>
+        <div class="bg-black rounded-2xl">
+          <h1 class="text-center text-3xl py-3">Budget</h1>
+          <div class="p-4">
+            <p>
+              Per Player:
+              <input class="w-3/5 bg-slate-800 rounded p-2 m-1" type="text" />
+            </p>
+            <p class="text-center">
+              <button class="btn btn-active btn-primary m-2">Calculate</button>
+            </p>
+            <p class="text-xl">Player Expanse: $<span></span></p>
+            <p>
+              Manager:
+              <input class="w-3/5 bg-slate-800 rounded p-2 m-1" type="text" />
+            </p>
+            <p>
+              Coach:
+              <input class="w-3/5 bg-slate-800 rounded p-2 m-1" type="text" />
+            </p>
+            <p class="text-center">
+              <button class="btn btn-active btn-primary m-2">
+                Calculate Total
+              </button>
+            </p>
+            <p class="text-2xl">Total: $<span></span></p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--Main section start-->
+  </body>
+</html>
