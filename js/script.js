@@ -1,3 +1,4 @@
+//Add five players
 function addFive(singleOne) {
     const fivePlayers = document.getElementById("playerName");
     const ol = document.createElement('ol');
@@ -9,6 +10,7 @@ function addFive(singleOne) {
 
 let count = 0;
 
+//Select-V players section start
 const selectBtn = document.getElementsByClassName('selectBtn');
 for (let Select of selectBtn) {
     Select.addEventListener('click', function(event) {
@@ -22,13 +24,10 @@ for (let Select of selectBtn) {
         } else {
             alert("Player can not more then five");
         }
-        // event.target.style.disabled = true;
-        // console.log(heading);
-        // const fivePlayers = document.getElementById("playerName");
-        // const ol = document.createElement('ol');
-        // ol.innerHTML = `
-        //       <li>${playerName}</li>
-        //     `;
-        // fivePlayers.appendChild(ol);
     });
 }
+//Select-V players section end
+
+
+//Budget section
+document.getElementById()

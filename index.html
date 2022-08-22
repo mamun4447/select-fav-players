@@ -124,8 +124,9 @@
        
       </section>
 
-      <!--Five Players Name-->
+      
       <section class="grid grid-cols-1 h-auto">
+        <!--Five Players Name-->
         <div id="fivePlayers" class="bg-black rounded-2xl mb-5">
           <h1 class="text-center my-5 text-3xl">Selected-V</h1>
             <ol id="playerName" class="p-5">
@@ -133,31 +134,32 @@
             </ol>
             
         </div>
+        <!--Budget section-->
         <div class="bg-black rounded-2xl">
           <h1 class="text-center text-3xl py-3">Budget</h1>
           <div class="p-4">
             <p>
               Per Player:
-              <input class="w-3/5 bg-slate-800 rounded p-2 m-1" type="text" />
+              <input id="perPlayerInputField" class="w-3/5 bg-slate-800 rounded p-2 m-1" type="text" />
             </p>
             <p class="text-center">
-              <button class="btn btn-active btn-primary m-2">Calculate</button>
+              <button id="playersCostBtn" class="btn btn-active btn-primary m-2">Calculate</button>
             </p>
-            <p class="text-xl">Player Expanse: $<span></span></p>
+            <p class="text-xl">Player Expanse: $<span id="playersCostOutput"></span></p>
             <p>
               Manager:
-              <input class="w-3/5 bg-slate-800 rounded p-2 m-1" type="text" />
+              <input id="managerInputField" class="w-3/5 bg-slate-800 rounded p-2 m-1" type="text" />
             </p>
             <p>
               Coach:
-              <input class="w-3/5 bg-slate-800 rounded p-2 m-1" type="text" />
+              <input id="coachInputField" class="w-3/5 bg-slate-800 rounded p-2 m-1" type="text" />
             </p>
             <p class="text-center">
-              <button class="btn btn-active btn-primary m-2">
+              <button id="calculateTotalBtn" class="btn btn-active btn-primary m-2">
                 Calculate Total
               </button>
             </p>
-            <p class="text-2xl">Total: $<span></span></p>
+            <p class="text-2xl">Total: $<span id="totalField"></span></p>
           </div>
         </div>
       </section>
