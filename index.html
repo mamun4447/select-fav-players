@@ -6,9 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Select your Fav Player's</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
     <!--Tailwind Link start-->
     <!--DaisyUi Link-->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -25,20 +22,27 @@
     <!--Header section Start-->
     <header class="w-full h-96 bg-black">
       <div class="text-center pt-20 backgrounImage">
-        <h1 class="lg:text-8xl text-6xl heading py-3 font-serif">
+        <div class="z-20">
+          <h1 class="lg:text-8xl text-6xl heading py-3 z-20 font-serif">
           Hire Best Five Players
         </h1>
-        <p class="w-3/6 mx-auto sm:text-xs md:text-sm lg:text-lg">
+        <p class="w-3/6 z-10 mx-auto sm:text-xs md:text-sm lg:text-lg">
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
           sint. Velit officia consequat duis enim velit mollit.
         </p>
-        <img class="absolute top-0 right-0" src="images/Card-psg.png" alt="" />
+        </div>
+        <div class="-z-10">
+          <img class="absolute top-0 right-0 " src="images/Card-psg.png" alt="" />
+        </div>
+          
 
         <img
-          class="absolute bottom-60 sticky left-0"
+          class="absolute bottom-72 sticky left-0"
           src="images/path56.png"
           alt=""
         />
+        
+        
       </div>
     </header>
     <!--Header section End-->
@@ -164,7 +168,7 @@
         <div class="bg-black rounded-2xl">
           <h1 class="text-center text-3xl py-3">Budget</h1>
           <div class="p-4">
-            <p>
+            <p class="flex justify-between items-center">
               Per Player:
               <input
                 id="perPlayerInputField"
@@ -175,15 +179,15 @@
             <p class="text-center">
               <button
                 id="playersCostBtn"
-                class="btn btn-active btn-primary m-2"
+                class="btn btn-active btn-primary mt-8"
               >
                 Calculate
               </button>
             </p>
-            <p class="text-xl">
-              Player Expanse: $<span id="playersCostOutput">0</span>
+            <p class="text-xl py-5">
+              Player Expanse: $<span class="text-orange-400" id="playersCostOutput">0</span>
             </p>
-            <p>
+            <p class="flex justify-between items-center">
               Manager:
               <input
                 id="managerInputField"
@@ -191,7 +195,7 @@
                 type="text"
               />
             </p>
-            <p>
+            <p class="flex justify-between items-center">
               Coach:
               <input
                 id="coachInputField"
@@ -202,12 +206,12 @@
             <p class="text-center">
               <button
                 id="calculateTotalBtn"
-                class="btn btn-active btn-primary m-2"
+                class="btn btn-active btn-primary mt-8"
               >
                 Calculate Total
               </button>
             </p>
-            <p class="text-2xl">Total: $<span id="totalField">0</span></p>
+            <p class="text-2xl text-center my-4">Total: $<span class="text-orange-400" id="totalField">0</span></p>
           </div>
         </div>
       </section>
