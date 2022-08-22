@@ -1,9 +1,9 @@
 //Add five players
-function addFive(singleOne) {
+function addFive(singleOne, count) {
     const fivePlayers = document.getElementById("playerName");
     const ol = document.createElement('ol');
     ol.innerHTML = `
-       <li>${singleOne}</li>
+       <li>${count}.  ${singleOne}</li>
       `;
     fivePlayers.appendChild(ol);
 }
@@ -45,7 +45,7 @@ for (let Select of selectBtn) {
         event.target.disabled = "disabled";
         count++;
         if (count <= 5) {
-            addFive(playerName);
+            addFive(playerName, count);
         } else {
             alert("Player can not more then five");
             count--;
