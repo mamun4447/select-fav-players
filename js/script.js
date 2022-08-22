@@ -8,6 +8,25 @@ function addFive(singleOne) {
     fivePlayers.appendChild(ol);
 }
 
+//get value by id
+function getValueById(id) {
+    const valueString = document.getElementById(id).value;
+    const value = parseFloat(valueString);
+    document.getElementById(id).value = "";
+
+    return value;
+}
+
+//set out put on text field
+function getOutputOnField(id, output) {
+    const field = document.getElementById(id);
+    field.innerText = output;
+
+}
+
+
+
+
 let count = 0;
 
 //Select-V players section start
@@ -17,7 +36,7 @@ for (let Select of selectBtn) {
         const playerName = event.target.parentNode.parentNode.firstChild.nextSibling.innerText;
 
 
-        event.target.style.disabled = 'true';
+        event.target.disabled = "disabled";
         count++;
         if (count <= 5) {
             addFive(playerName);
@@ -30,4 +49,13 @@ for (let Select of selectBtn) {
 
 
 //Budget section
-document.getElementById()
+// calculate player cost
+document.getElementById("playersCostBtn").addEventListener('click', function() {
+    const perPlayer = getValueById("perPlayerInputField");
+    const playersTotalCost = perPlayer * count;
+
+    getOutputOnField("playersCostOutput", playersTotalCost);
+});
+
+// calculate total cost
+document.getElementById("")
