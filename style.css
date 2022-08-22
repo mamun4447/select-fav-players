@@ -7,9 +7,15 @@
     background-image: url(images/Rectangle\ 56.png);
 } */
 
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 .heading {
     color: #FF5E19;
     /* font-family: 'DynaPuff', cursive; */
+    /* font-family: 'Lobster', cursive; */
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
 }
 
 body {

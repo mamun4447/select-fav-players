@@ -41,11 +41,10 @@ for (let Select of selectBtn) {
     Select.addEventListener('click', function(event) {
         const playerName = event.target.parentNode.parentNode.firstChild.nextSibling.innerText;
 
-
-        event.target.disabled = "disabled";
         count++;
         if (count <= 5) {
             addFive(playerName, count);
+            event.target.disabled = "disabled";
         } else {
             alert("Player can not more then five");
             count--;
