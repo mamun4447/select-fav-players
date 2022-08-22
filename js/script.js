@@ -9,7 +9,7 @@ function addFive(singleOne) {
 }
 
 //get value by id
-function getValueById(id) {
+function getValueFromInputField(id) {
     const valueString = document.getElementById(id).value;
     const value = parseFloat(valueString);
     document.getElementById(id).value = "";
@@ -19,11 +19,11 @@ function getValueById(id) {
 
 //set out put on text field
 function getOutputOnField(id, output) {
-    const field = document.getElementById(id);
-    field.innerText = output;
+    const fields = document.getElementById(id);
+
+    fields.innerText = output;
 
 }
-
 
 
 
@@ -51,11 +51,21 @@ for (let Select of selectBtn) {
 //Budget section
 // calculate player cost
 document.getElementById("playersCostBtn").addEventListener('click', function() {
-    const perPlayer = getValueById("perPlayerInputField");
+    const perPlayer = getValueFromInputField("perPlayerInputField");
     const playersTotalCost = perPlayer * count;
 
     getOutputOnField("playersCostOutput", playersTotalCost);
 });
 
 // calculate total cost
-document.getElementById("")
+document.getElementById("calculateTotalBtn").addEventListener('click', function() {
+    const managerCost = getValueFromInputField("managerInputField");
+    const coachCost = getValueFromInputField("coachInputField");
+    const playescostOutputField = document.getElementById("playersCostOutput");
+    const playerCostString = playescostOutputField.innerText;
+    const playersCost = parseFloat(playerCostString);
+
+    const totalCost = managerCost + coachCost + playersCost;
+
+    getOutputOnField("totalField", totalCost);
+});
