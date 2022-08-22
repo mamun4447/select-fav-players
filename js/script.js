@@ -12,9 +12,15 @@ function addFive(singleOne) {
 function getValueFromInputField(id) {
     const valueString = document.getElementById(id).value;
     const value = parseFloat(valueString);
+
+    if (isNaN(value)) {
+        alert('Input value have to be a number!!');
+    } else {
+        return value;
+    }
     document.getElementById(id).value = "";
 
-    return value;
+
 }
 
 //set out put on text field
@@ -42,6 +48,7 @@ for (let Select of selectBtn) {
             addFive(playerName);
         } else {
             alert("Player can not more then five");
+            count--;
         }
     });
 }
@@ -53,6 +60,7 @@ for (let Select of selectBtn) {
 document.getElementById("playersCostBtn").addEventListener('click', function() {
     const perPlayer = getValueFromInputField("perPlayerInputField");
     const playersTotalCost = perPlayer * count;
+
 
     getOutputOnField("playersCostOutput", playersTotalCost);
 });
